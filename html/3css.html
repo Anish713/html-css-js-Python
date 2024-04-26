@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/3.css">
+<style>
+    .class1 {
+        color: blue;
+        font-size: 75px;
+    }
+
+    #internal {
+        color: red;
+    }
+
+    h1 {
+        color: green;
+        background-color: yellow;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: #2196F3;
+        padding: 10px;
+    }
+
+    .grid-container>div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        text-align: center;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+
+    <h1>Grid Container</h1>
+
+    <p>A Grid Container consists of grid items arranged in columns and rows</p>
+
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <!-- <div>8</div> -->
+    </div>
+
+
+
+    <h1 style="background-color: blueviolet;">Inline CSS</h1>
+    <p id="internal" class="class1" name="name1">This is internal css, CSS focuses more on id styles.</p>
+
+    <div id="div1">
+        <h1 class="h1">Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur eligendi impedit iure aliquam vel.
+            Eum suscipit sequi similique adipisci accusamus? Illo, dolor quos!</p>
+    </div>
+
+    <div>
+        <h1 class="h1">Lorem, ipsum dolor.</h1>
+        <span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nisi aperiam cupiditate saepe
+                reiciendis reprehenderit nam ab excepturi dolorem adipisci, a rem et?
+            </p>
+        </span>
+    </div>
+
+    <!-- Sassy css = .scss (sassy cascading stylesheet ), it is compiled into css. supports variable, inheritance, mixins,etc -->
+
+    <!-- mixins: "reusable" code snippets that can be called with a single line of code (like functions in programming)  -->
+
+</body>
+
+</html>

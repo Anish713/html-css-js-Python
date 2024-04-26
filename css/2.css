@@ -1,18 +1,18 @@
-.external{
+.external {
     color: rgba(85, 0, 109, 0.74);
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-#id1{
+#id1 {
     color: #ff0000;
     font-size: 5px;
     font-weight: bold;
     text-decoration: underline;
 }
 
-p{
+p {
     color: #ff0000;
     font-size: 20px;
     font-weight: bold;

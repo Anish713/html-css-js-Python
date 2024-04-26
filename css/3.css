@@ -1,0 +1,31 @@
+/* Selects all <p> elements that are descendants of <div> elements */
+div p {
+    color: blue;
+}
+
+/* Selects all <p> elements where the parent is a <div> element */
+div>p {
+    color: red;
+}
+
+/* Selects all <p> elements that are the next sibling of a <div> element */
+div+p {
+    color: rgb(45, 1, 1);
+}
+
+/* Selects all <p> elements that are the first child of a <div> element */
+div p:first-child {
+    color: pink;
+}
+
+/* Selects all <p> elements that are the last child of a <div> element */
+/* div p:last-child {
+    color: yellow;
+    } */
+
+/* Selects all <p> elements that are the nth-child of a <div> element */
+/* div p:nth-child(2) {
+    color: orange;
+    } */
+
+    
