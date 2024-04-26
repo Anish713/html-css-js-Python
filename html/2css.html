@@ -1,0 +1,54 @@
+<!-- attributes: id, class, src, href, alt, title, style, ...
+    it defines tag behaviour, added to html tag 
+-->
+<!-- id: unique, class: multiple -->
+
+<!-- inline css: style="color:red" -->
+<!-- internal css: <style> tag -->
+<!-- external css: <link rel="stylesheet" href="style.css"> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is title...</title>
+</head>
+
+
+
+<!-- This is external css -->
+<link rel="stylesheet" href="../css/2.css">
+
+
+<body>
+    <div id="id1" style="color: red;">
+        <h1>This is a heading with inline CSS</h1>
+        <p style="color: blueviolet;">This is a paragraph with inline CSS.</p>
+    </div>
+
+    <style>
+        .myClass {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+
+    <div class="myClass">
+        <h1 style="background-color: burlywood;">This is a heading with internal CSS</h1>
+        <p>This is a paragraph with internal CSS.</p>
+    </div>
+
+    <div class="external">
+        <h1>This is a heading with external CSS</h1>
+        <p>This is a paragraph with external CSS.</p>
+    </div>
+
+    <div>
+        <h1>This is a heading with external CSS</h1>
+        <p>This is a paragraph with external CSS.</p>
+    </div>
+</body>
+
+</html>

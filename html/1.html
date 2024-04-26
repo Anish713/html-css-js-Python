@@ -1,0 +1,214 @@
+<!-- ! for boilerplate code, this is comment  -->
+<!-- This is
+    multi-line
+     comment -->
+<!-- html: hypertext markup language -->
+<!-- tag: anything in <></>
+self closing tags: br,hr,... -->
+
+<!-- meta tags are used to provide metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata. MOSTLY USED FOR SEO purposes-->
+
+<!-- live server: use in web development, check side by side preview by just saving html file -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1>Welcome to my Website</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+
+    <h1>This is h1 heading tag</h1>
+    <h2>This is h2 heading tag</h2>
+    <h3>This is h3 heading tag</h3>
+    <h4>This is h4 heading tag</h4>
+    <h5>This is h5 heading tag</h5>
+    <h6>This is h6 heading tag</h6>
+
+    <p> This is a paragraph.
+        <h7>This is h7 heading tag,but not working. Only h1 to h6 heading tags are available.</h7>
+    </p>
+
+    <div>
+        This is a div tag. Div tag takes the full width of the page but not the full height.
+        <p>
+        <p>
+            <b>This is a paragraph inside a div tag.</b>
+            <br>
+            <i>This is an italic text.</i>
+
+        </p>
+        <br>
+
+        <!-- This <a></a> is anchor tag for links. -->
+        <a href="https://www.google.com">This is a link to google to open in same page.</a>
+
+        <hr>
+
+        <a href="https://www.google.com" target="_blank">This is a link to google to open in new page with
+            <b>target.</b></a>
+        </p>
+    </div>
+
+    <div>
+        <h1>Unordered List</h1>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Ordered List</h1>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+    </div>
+
+    <div>
+        <h1>Table</h1>
+        <table border="1">
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+            <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+                <td>Row 1, Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Column 1</td>
+                <td>Row 2, Column 2</td>
+                <td>Row 2, Column 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Column 1</td>
+                <td>Row 3, Column 2</td>
+                <td>Row 3, Column 3</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Form</h1>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Submit">
+            <button type="reset">Reset</button>
+
+        </form>
+    </div>
+
+    <div>
+        <h1>Image</h1>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="This is alternative text of image when image doesn't load or exists." title="Google Logo"
+            style="width: 245px; height: 100px;">
+    </div>
+
+    <div>
+        <h1>Video</h1>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            This is video tag.
+        </video>
+    </div>
+
+    <div>
+        <h1>Audio</h1>
+        <audio controls>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="./audio.mp3" type="audio/mp3">
+            This is audio tag.
+        </audio>
+    </div>
+
+    <div>
+        <h1>Buttons</h1>
+        <button>Click Me</button>
+        <button type="button">Click Me</button>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </div>
+
+    <div>
+        <h1>Options</h1>
+        <select>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+
+    <div>
+        <h1>Choices</h1>
+
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> <label for="vehicle1"> I have a
+            bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> <label for="vehicle2"> I have a
+            car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> <label for="vehicle3"> I have a
+            boat</label><br>
+
+    </div>
+
+    <div>
+        <h1>Radio</h1>
+        <input type="radio" id="option1" name="option" value="value1">
+        <label for="option1">Anish</label>
+
+        <input type="radio" id="option2" name="option" value="value2">
+        <label for="option2">Pragya</label>
+
+        <input type="radio" id="option3" name="option" value="value3">
+        <label for="option3">Jupiter</label>
+    </div>
+
+    <h1>Semantic HTML</h1>
+    <p>HTML5 introduced several new semantic elements. Semantic elements are elements with a meaning. SEO reply on it.
+        A semantic element clearly describes its meaning to both the browser and the developer.
+        <br>
+
+        Examples of non-semantic elements:
+        &lt;div&gt; and &lt;span> - Tells nothing about its content.
+        <br>
+
+    <p>Examples of semantic elements: &lt;form&gt;, &lt;table&gt;, and &lt;article&gt; - Clearly defines its content.
+    </p>
+    </p>
+</body>
+
+<footer>This is FOOTER</footer>
+
+</html>

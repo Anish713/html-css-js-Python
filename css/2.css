@@ -1,0 +1,41 @@
+.external{
+    color: rgba(85, 0, 109, 0.74);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#id1{
+    color: #ff0000;
+    font-size: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p{
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* h1{
+    color: #ff0000;
+    font-size: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+} */
+
+/* p, h1{
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+} */
+
+/* div {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+} */
