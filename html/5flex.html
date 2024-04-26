@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Showcase</title>
+    <!-- <link rel="stylesheet" href="styles.css"> Linking to external CSS file -->
+    <style>
+        /* Resetting default margin and padding */
+        body,
+        h1,
+        h2,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Styling main content */
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Flexbox example */
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-item {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            margin-right: 10px;
+            text-align: center;
+            flex: 1;
+        }
+
+        /* Styling footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Flexbox Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="#need">Need for Flexbox</a></li>
+                <li><a href="#uses">Uses of Flexbox</a></li>
+                <li><a href="#examples">Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="need">
+            <h2>Need for Flexbox</h2>
+            <p>Flexbox is a powerful layout model designed to make complex layouts more intuitive and easier to
+                implement. It provides a more efficient way to align, distribute, and space elements within a container.
+            </p>
+        </section>
+
+        <section id="uses">
+            <h2>Uses of Flexbox</h2>
+            <ul>
+                <li>Creating responsive layouts</li>
+                <li>Aligning items vertically and horizontally</li>
+                <li>Distributing space between items evenly</li>
+                <li>Building navigation bars, sidebars, and cards</li>
+            </ul>
+        </section>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <div class="flex-container">
+                <div class="flex-item">1</div>
+                <div class="flex-item">2</div>
+                <div class="flex-item">3</div>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <!-- <style>
+                /*/*Uncomment below after checking others */
+                */ .flex-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    background-color: DodgerBlue;
+                }
+
+                .flex-container>div {
+                    background-color: #281313;
+                    width: 100px;
+                    margin: 10px;
+                    text-align: center;
+                    line-height: 75px;
+                    font-size: 30px;
+                }
+            </style> -->
+        </head>
+
+        <body>
+
+            <h1>The flex-wrap Property</h1>
+
+            <p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+                <div>11</div>
+                <div>12</div>
+            </div>
+
+            <p>Try resizing the browser window, after commenting unnecessary codes for now.</p>
+
+        </body>
+
+        </html>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Flexbox Showcase. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

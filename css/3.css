@@ -1,3 +1,11 @@
+/* There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~) */
+
+
 /* Selects all <p> elements that are descendants of <div> elements */
 div p {
     color: blue;
