@@ -1,3 +1,9 @@
+// 'use strict';
+
+console.log(a); // undefined
+var a = 10;
+
+
 //This is single line comment in js
 
 /*
@@ -245,4 +251,11 @@ function callback2(name, callback) {
 
 // callback2('Anish', callback1)
 
+// export default user //ES6 syntax //exporting default object to be used in other files. //can be used only once in a file. //can export function, variable, object, etc.
+// export { add1, add2, add3, add4, scope1, callback1, callback2, one } //ES6 syntax, module js //exporting functions to be used in other files. //imported in 3loops.js
+// module.exports = { callback2, one, user } //CommonJS syntax //exporting functions to be used in other files. //imported in 3loops.js
 
+props = { one, user, callback2 }
+
+// exports default props //module js syntax //exported without destructuring //exporting functions to be used in other files. //imported in 3loops.js
+module.exports = props //CommonJS syntax //exported without destructuring //exporting functions to be used in other files. //imported in 3loops.js
