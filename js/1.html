@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- writing js in html page -->
+<script>
+    var a = 10;
+    var b = 20 //semicolon is optional
+    var c = a + b
+    console.log(c);
+    document.write(c);
+    document.write("<br>");
+    //alert(c);
+</script>
+
+<script>
+    a = 30
+    const d = 'I am a constant variable'
+    console.log(a, d); //check values in console, a changed to 30
+    //d='I am changed.' ////error, can't change value of constant variable
+    console.log(d);
+
+</script>
+
+<body>
+    <div id="container" class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae maxime eum repellendus ut, perspiciatis similique
+        aspernatur quasi perferendis quaerat veritatis rerum minima, quas dolor! Hic, vero numquam excepturi quibusdam
+        id,
+        vitae quia incidunt odio debitis architecto praesentium maxime fugiat tempora officia, error sequi est possimus
+        dolores nam. Quibusdam, esse enim.
+    </div>
+
+    <div class="container">
+        <i>
+
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia iusto similique minus commodi?
+        </i>
+    </div>
+
+    <button onclick="document.getElementById('container').style.fontSize='24px'">Change Font</button>
+
+
+    <div>
+
+        <p>JavaScript can change HTML attribute values.</p>
+
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+        <button onclick="document.getElementById('myImage').src='../assets/bulbon.gif'">Turn on the light</button>
+
+        <img id="myImage" src="../assets/bulboff.gif" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='../assets/bulboff.gif'">Turn off the light </button>
+    </div>
+
+    <div>
+        <h1>Using Function, getElementById</h1>
+        <button onclick="turnOnLight()">Turn on the light</button>
+        <img id="myImage" class="myImages" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <button onclick="turnOffLight()">Turn off the light</button>
+
+        <script>
+            //only first bulb change cause id is unique and multiple elements can't have same id
+            function turnOnLight() {
+                document.getElementById('myImage').src = '../assets/bulbon.gif';
+            }
+
+            function turnOffLight() {
+                document.getElementById('myImage').src = '../assets/bulboff.gif';
+            }
+        </script>
+
+    </div>
+
+
+    <div>
+        <h1>Using Function, getElementByClassName</h1>
+        <button onclick="turnOnLights()">Turn on the lights</button>
+        <img class="myImages" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <img class="myImages" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <!-- className is different for last bulb so, it wont change. -->
+        <img class="myImages2" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <button onclick="turnOffLights()">Turn off the lights</button>
+
+        <script>
+
+            function turnOnLights() {
+                var images = document.getElementsByClassName('myImages');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].src = '../assets/bulbon.gif';
+                }
+            }
+
+            function turnOffLights() {
+                var images = document.getElementsByClassName('myImages');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].src = '../assets/bulboff.gif';
+                }
+            }
+        </script>
+
+    </div>
+
+
+    <div>
+        <h1>using query selector</h1>
+        <button onclick="turnOnLightsQuery()">Turn on the lights</button>
+        <img id="queryId" class="myImages" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <img class="queryClass" src="../assets/bulboff.gif" alt="Light bulb" style="width:100px">
+        <button onclick="turnOffLightsQuery()">Turn off the lights</button>
+
+        <script>
+            function turnOnLightsQuery() {
+                var images = document.querySelectorAll('#queryId');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].src = '../assets/bulbon.gif';
+                }
+            }
+
+            function turnOffLightsQuery() {
+                var images = document.querySelectorAll('#queryId');
+                for (var i = 0; i < images.length; i++) {
+                    images[i].src = '../assets/bulboff.gif';
+                }
+            }
+
+
+        </script>
+    </div>
+
+    <br><br><br><br><br>
+
+    <button type="button" onclick="myFunction1()">Click Me(normal function)!</button> <br>
+    <button type="button" onclick="myFunction2()">Click Me(Arrow function)!</button>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction1() {
+            document.getElementById("demo1").innerHTML = "Hello Dolly! <br> How are you?";
+            document.getElementById("demo2").innerText = "I am fine. <br> Thanks for asking!";
+        }
+
+        //Arrow function
+        myFunction2 = () => {
+            document.getElementById("demo1").innerHTML = "Hello Dolly! <br> How are you?";
+            document.getElementById("demo2").innerText = "I am fine. <br> Thanks for asking!";
+        }
+
+    </script>
+
+    </div>
+
+
+
+</body>
+
+</html>
