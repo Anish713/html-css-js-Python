@@ -21,6 +21,15 @@ This is
 
     const c = "I am a const inside scope."
     // console.log(c);
+
+    //////unary, binary, ternary operators
+    // console.log(typeof a); // unary operator
+    let d = 9
+    let e = 10
+    // console.log(-d) // unary operator
+    // console.log(d + e) // binary operator
+    let f = d > e ? d : e // ternary operator
+    // console.log(f)
 }
 // console.log(a); // ReferenceError: a is not defined
 // console.log(b); // I am a var inside scope
@@ -74,6 +83,8 @@ scope1();
 // console.log(False==0 & True==1) // true
 // console.log(False===0 & True===1) // false
 
+
+//////type coercion : automatic conversion of values from one data type to another data type.
 // console.log(5+'5') //int + string = string (Concatenation)
 // console.log(5+5) //int + int = int (Addition)
 // console.log(typeof(5+2.0)) //int + float = float (Addition)
@@ -89,8 +100,8 @@ carName1 = "Volvo";
 // console.log(carName1); // Volvo
 var carName1;
 
-// carName2 = "Saab";
-// let carName2 = "Volvo";
+// carName2 = "Saab"; //temporal dead zone: using let before declared.
+// let carName2 = "Volvo"; 
 // console.log(carName2); // ReferenceError: carName2 is not defined
 
 // console.log(carName3); // undefined
