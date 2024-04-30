@@ -1,3 +1,11 @@
+@media only screen and (max-width: 600px) {
+
+    /* for responsive design, media queries */
+    body {
+        background-color: lightblue;
+    }
+}
+
 .external {
     color: rgba(85, 0, 109, 0.74);
     font-size: 20px;

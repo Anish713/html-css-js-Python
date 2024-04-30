@@ -18,6 +18,20 @@ self closing tags: br,hr,... -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    :root {
+        /*global variable*/
+        --main-color: red;
+    }
+
+    .testvar {
+        --main-color: rgb(255, 0, 166);
+        /*local variable*/
+        color: var(--main-color);
+        /* variable in css*/
+        background-color: yellow;
+    }
+</style>
 
 <header>
     <h1>Welcome to my Website</h1>
@@ -43,7 +57,7 @@ self closing tags: br,hr,... -->
     <h5>This is h5 heading tag</h5>
     <h6>This is h6 heading tag</h6>
 
-    <p> This is a paragraph.
+    <p class="testvar"> This is a paragraph.
         <h7>This is h7 heading tag,but not working. Only h1 to h6 heading tags are available.</h7>
     </p>
 
@@ -215,3 +229,85 @@ self closing tags: br,hr,... -->
 <footer>This is FOOTER</footer>
 
 </html>
+
+
+<!-- NOTES ON CSS: -->
+
+<!-- /* CSS is used to style the HTML elements. */
+    /* CSS can be added in 3 ways: inline, internal, external */
+    /* Inline CSS: <h1 style="color:blue;">This is a Blue Heading</h1> */
+    /* Internal CSS: <style> h1 {color: red;} </style> */
+    /* External CSS: <link rel="stylesheet" href="styles.css"> */
+    /* CSS Syntax: selector {property: value;} */
+    /* CSS Comments: /* This is a comment */ */
+    /* CSS Selectors: */
+    /* 1. Element Selector: h1 {color: blue;} */
+    /* 2. ID Selector: #para1 {text-align: center;} */
+    /* 3. Class Selector: .center {text-align: center;} */
+    /* 4. Universal Selector: * {text-align: center;} */
+    /* 5. Group Selector: h1, h2, p {text-align: center;} */
+    /* 6. Descendant Selector: div p {text-align: center;} */
+    /* 7. Child Selector: div > p {text-align: center;} */
+    /* 8. Attribute Selector: a[target] {background-color: yellow;} */
+    /* 9. Pseudo-class Selector: a:hover {background-color: yellow;} */
+    /* 10. Pseudo-element Selector: p::first-line {color: blue;} */
+    /* 11. Combinator Selector: h1 + p {background-color: yellow;} */
+    /* 12. Grouping Selector: h1, h2, p {background-color: yellow;} */
+    /* 13. Specificity: ID > Class > Element */
+    /* 14. Inheritance: Child elements inherit the styles of parent elements. */
+    /* 15. Box Model: Content, Padding, Border, Margin */
+    /* 16. Display Property: block, inline, inline-block, none */
+    /* 17. Position Property: static, relative, absolute, fixed */
+    /* 18. Float Property: left, right, none */
+    /* 19. Flexbox: display: flex; */
+    /* 20. Grid: display: grid; */
+    /* 21. CSS Variables: :root {--main-color: red;} h1 {color: var(--main-color);} */
+    /* 22. Media Queries: @media screen and (max-width: 600px) {h1 {color: blue;}} */
+    /* 23. CSS Functions: rgb(), rgba(), hsl(), hsla(), url() */
+    /* 24. CSS Gradient: background: linear-gradient(red, yellow); */
+    /* 25. CSS Animation: @keyframes example {from {background-color: red;} to {background-color: yellow;}} */
+    /* 26. CSS Transition: div {transition: width 2s;} div:hover {width: 300px;} */
+    /* 27. CSS Transform: div {transform: rotate(20deg);} */
+    /* 28. CSS Flexbox: display: flex; */
+    /* 29. CSS Grid: display: grid; */
+    /* 30. CSS Box Shadow: div {box-shadow: 10px 10px grey;} */
+    /* 31. CSS Text Shadow: h1 {text-shadow: 2px 2px 5px red;} */
+    /* 32. CSS Overflow: visible, hidden, scroll, auto */
+    /* 33. CSS Filter: img {filter: brightness(50%);} */
+    /* 34. CSS Blend Mode: img {mix-blend-mode: multiply;} */
+    /* 35. CSS Grid Template: grid-template-columns: 100px 100px 100px; */
+    /* 36. CSS Grid Gap: grid-gap: 50px; */
+    /* 37. CSS Grid Auto Fit: grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+    /* 38. CSS Grid Auto Fill: grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); */
+    /* 39. CSS Grid Area: grid-area: 1 / 1 / 2 / 2; */
+    /* 40. CSS Grid Row: grid-row: 1 / 2; */
+    /* 41. CSS Grid Column: grid-column: 1 / 2; */
+    /* 42. CSS Grid Row Start: grid-row-start: 1; */
+    /* 43. CSS Grid Row End: grid-row-end: 2; */
+    /* 44. CSS Grid Column Start: grid-column-start: 1; */
+    /* 45. CSS Grid Column End: grid-column-end: 2; */
+    /* 46. CSS Grid Row Gap: grid-row-gap: 50px; */
+    /* 47. CSS Grid Column Gap: grid-column-gap: 50px; */
+    /* 48. CSS Grid Justify Content: justify-content: center; */
+    /* 49. CSS Grid Align Content: align-content: center; */
+    /* 50. CSS Grid Justify Items: justify-items: center; */
+    /* 51. CSS Grid Align Items: align-items: center; */
+    /* 52. CSS Grid Justify Self: justify-self: center; */
+    /* 53. CSS Grid Align Self: align-self: center; */
+    /* 54. CSS Grid Auto Rows: grid-auto-rows: 100px; */
+    /* 55. CSS Grid Auto Columns: grid-auto-columns: 100px; */
+    /* 56. CSS Grid Auto Flow: grid-auto-flow: column; */
+    /* 57. CSS Grid Template Areas: grid-template-areas: "header header header" "main main main" "footer footer footer"; */
+    /* 58. CSS Grid Area: grid-area: header; */
+    /* 59. CSS Grid Template Rows: grid-template-rows: 100px 200px; */
+    /* 60. CSS Grid Template Columns: grid-template-columns: 100px 200px; */
+    /* 61. CSS Grid Template: grid-template: 100px 200px / 200px 400px; */
+    /* 62. CSS Grid Column Start: grid-column-start: 1; */
+    /* 63. CSS Grid Column End: grid-column-end: 2; */
+    /* 64. CSS Grid Row Start: grid-row-start: 1; */
+    /* 65. CSS Grid Row End: grid-row-end: 2; */
+    /* 66. CSS Grid Column Gap: grid-column-gap: 50px; */
+    /* 67. CSS Grid Row Gap: grid-row-gap: 50px; */
+    /* 68. CSS Grid Gap: grid-gap: 50px 100px; */
+    /* 69. CSS Grid Gap: grid-gap: 50px; */
+    /* 70. CSS Grid Gap: grid-gap: 50px 100px; */ -->
